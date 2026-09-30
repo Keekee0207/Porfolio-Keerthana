@@ -1239,40 +1239,213 @@ body {
     color: var(--accent-yellow);
 }
 
-/* RESPONSIVE DESIGN */
+/* RESPONSIVE DESIGN SYSTEM (LAPTOP, TABLET & MOBILE) */
+
+/* 1. TABLET & SMALL LAPTOP BREAKPOINT (max-width: 1024px) */
 @media (max-width: 1024px) {
+    .main-container {
+        padding: 2.5rem 1.5rem 5rem 1.5rem;
+        gap: 4.5rem;
+    }
+
     .hero-section {
         grid-template-columns: 1fr;
+        gap: 2.5rem;
     }
+
     .photo-frame-wrapper {
         position: static;
         max-width: 360px;
+        width: 100%;
+        margin: 0 auto;
     }
-    .works-grid, .positions-grid {
+
+    .hero-title {
+        font-size: clamp(2.4rem, 5vw, 3.2rem);
+    }
+
+    .stats-grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
     }
+
+    .works-grid, 
+    .reels-grid, 
+    .positions-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
     .event-frames-grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
     }
-    .frame-span-2, .frame-span-3 {
+
+    .frame-span-2, 
+    .frame-span-3 {
         grid-column: span 1;
     }
+
+    .instagram-banner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+
+    .insta-stats-row {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.75rem;
+    }
+
+    .insta-stat-box {
+        min-width: 0;
+        padding: 0.85rem 0.5rem;
+    }
+
     .contact-frames-grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
     }
 }
 
-@media (max-width: 640px) {
-    .hero-title {
-        font-size: 2.6rem;
+/* 2. TABLET PORTRAIT / MEDIUM DEVICE BREAKPOINT (max-width: 768px) */
+@media (max-width: 768px) {
+    .top-status-bar {
+        flex-direction: column;
+        gap: 0.75rem;
+        padding: 0.85rem 1rem;
+        text-align: center;
     }
-    .stats-grid, .works-grid, .positions-grid, .event-frames-grid, .contact-frames-grid {
+
+    .status-pill {
+        font-size: 0.7rem;
+        padding: 5px 12px;
+        text-align: center;
+    }
+
+    .status-cta {
+        font-size: 0.8rem;
+        padding: 5px 14px;
+    }
+
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+
+    .section-header p {
+        text-align: left;
+    }
+
+    .hero-title {
+        font-size: clamp(2.1rem, 7vw, 2.7rem);
+    }
+
+    .badge-row {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .story-card {
+        padding: 1.5rem;
+    }
+
+    .story-bullets li {
+        font-size: 0.95rem;
+    }
+
+    .works-grid, 
+    .reels-grid, 
+    .positions-grid {
         grid-template-columns: 1fr;
     }
-    .frame-span-2, .frame-span-3 {
-        grid-column: span 1;
+
+    .exp-card {
+        min-width: 290px;
+        max-width: 85vw;
+        padding: 1.5rem;
     }
+
+    .footer-block {
+        padding: 2.5rem 1.5rem 1.75rem 1.5rem;
+        gap: 2.5rem;
+    }
+
     .footer-title {
-        font-size: 2.2rem;
+        font-size: clamp(2rem, 6.5vw, 2.6rem);
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 1.25rem;
+        text-align: center;
+    }
+}
+
+/* 3. MOBILE PHONES BREAKPOINT (max-width: 520px) */
+@media (max-width: 520px) {
+    .main-container {
+        padding: 1.25rem 0.85rem 3.5rem 0.85rem;
+        gap: 3.25rem;
+    }
+
+    .hero-title {
+        font-size: 2.1rem;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.85rem;
+    }
+
+    .stat-card {
+        padding: 1.25rem 1rem;
+    }
+
+    .stat-number {
+        font-size: 1.8rem;
+    }
+
+    .event-frames-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-frames-grid {
+        grid-template-columns: 1fr;
+        gap: 0.85rem;
+    }
+
+    .contact-stat-frame {
+        padding: 1.25rem 1.25rem;
+    }
+
+    .contact-frame-title {
+        font-size: 1.2rem;
+    }
+
+    .contact-frame-title.email-title {
+        font-size: clamp(0.72rem, 3.8vw, 0.95rem);
+    }
+
+    .insta-profile-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .insta-stats-row {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.4rem;
+    }
+
+    .stat-val {
+        font-size: 1.3rem;
+    }
+
+    .stat-lbl {
+        font-size: 0.55rem;
     }
 }
