@@ -51,11 +51,10 @@ The website must be styled after the bold, neo-brutalist tech-editorial aestheti
 8. SECTION 7: FOOTER & DIRECT CONTACT METHODS
    - Section Title: "REACH ME THROUGH"
    - Subtitle: "If you want, reach out to me."
-   - 2x2 Grid of Stat-Style Contact & Social Frames (styled after reference image stat boxes with heavy borders and offset shadows):
-     1. Phone / WhatsApp: `+91 95974 28809` (Terracotta Orange background `#F05A36`)
-     2. Email Address: `keerthanasankarsankar@gmail.com` (Pure White background `#FFFFFF`)
-     3. LinkedIn Profile: `keerthana0207` (Pure White background `#FFFFFF`)
-     4. Instagram Creator: `@keerthana_.sankar` (Terracotta Orange background `#F05A36`)
+   - Stat-Style Contact & Social Frames (styled after reference image stat boxes with heavy borders and offset shadows):
+     1. Email Address: `keerthanasankarsankar@gmail.com` (Terracotta Orange background `#F05A36`)
+     2. LinkedIn Profile: `keerthana0207` (Pure White background `#FFFFFF`)
+     3. Instagram Creator: `@keerthana_.sankar` (Terracotta Orange background `#F05A36`)
 
 ### VISUAL DESIGN & AESTHETIC GUIDELINES (Matching Reference Images):
 - Typography: Bold uppercase display headers (e.g., Space Grotesk / Syne) paired with clean body text (Inter).

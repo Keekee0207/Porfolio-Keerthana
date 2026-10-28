@@ -964,6 +964,10 @@ img {
         gap: 1.25rem;
     }
 
+    .contact-frames-grid .contact-stat-frame:first-child {
+        grid-column: span 2;
+    }
+
     .exp-card {
         flex: 0 0 320px;
         max-width: 360px;
@@ -1032,5 +1036,18 @@ img {
 
     .footer-title {
         font-size: 3.2rem;
+    }
+
+    .contact-frames-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.25rem;
+    }
+
+    .contact-frames-grid .contact-stat-frame:first-child {
+        grid-column: span 1;
+    }
+
+    .contact-frame-title.email-title {
+        font-size: clamp(0.8rem, 1.1vw, 1.05rem);
     }
 }
